@@ -2040,7 +2040,10 @@ ALTER TABLE name DROP COLUMN col_name;
 DROP TABLE name;
 DROP TABLE IF EXISTS name;   -- safe version
 ```
-
+👉 TRUNCATE = “Empty the table completely, but keep the table itself.” - remove the rows 
+```sql
+TRUNCATE TABLE students;
+```
 ---
 
 *End of PostgreSQL Basics Notes*
