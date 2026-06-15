@@ -1825,7 +1825,19 @@ CREATE TABLE Database (
 **Result:** A new empty table `Database` is created with 3 columns and no rows.
 
 > 📝 **My Notes**  
-> *(Add your notes, examples, or observations here)*
+Create Table - with constraint
+
+```sql
+CREATE TABLE employees (
+    employee_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    salary NUMERIC(10,2),
+    hire_date DATE,
+    department_id INT
+);
+```
 
 
 ---
